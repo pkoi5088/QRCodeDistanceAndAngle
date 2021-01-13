@@ -1,0 +1,26 @@
+1. 거리, 각도측정
+Object Distance Measurement by Stereo VISION
+스테레오 비전에 의한 객체 거리 측정
+--------------------------------------------------------------------------
+Stereo Vision Images Processing for Real-time Object Distance and Size Measurements
+실시간 객체 거리와 크기 측정을 위한 스테레오 비전 이미지 처리
+
+2. QR코드 활용 좌표화
+Indoor Localization of Mobile Robots Through QR Code Detection and Dead Reckoning Data Fusion
+QR코드 검출 및 사산 데이터 융합을 통한 모바일 로봇의 실내 위치 선정
+--------------------------------------------------------------------------
+Localization and navigation using QR code for mobile robot in indoor environment
+실내환경에서 모바일로봇용 QR코드를 이용한 위치추적 및 내비게이션
+
+3. QR코드 구조, 인식방법 연구
+Development of Color QR Code for Increasing Capacity
+용량증대를 위한 컬러 QR코드 개발
+--------------------------------------------------------------------------
+QR Code Recognition based on Principal Components Analysis Method
+주성분 분석법에 의한 QR코드 인식
+--------------------------------------------------------------------------
+A new QR Code Recognition Method using Deblurring and Modified Local Adaptive Thresholding Techniques
+디블러링 및 수정된 로컬 적응형 임계값 기법을 이용한 새로운 QR코드 인식기법
+
+4. 핀홀모델, 캘리브레이션
+책

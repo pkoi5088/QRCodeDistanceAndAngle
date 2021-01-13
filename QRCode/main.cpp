@@ -7,8 +7,8 @@
 using namespace cv;
 using namespace std;
 
-const double DEFAULT_SIDE = 60; //QR코드 한 변의 길이(mm)
-const String INPUT_IMG[5] = { "images/20/4/-20.jpg","images/20/4/-10.jpg","images/20/4/0.jpg","images/20/4/10.jpg","images/20/4/20.jpg" };//5개의 이미지 경로
+const double DEFAULT_SIDE = 48.3; //QR코드 한 변의 길이(cm)
+const String INPUT_IMG[5] = { "images/test2.jpg","images/test2.jpg","images/test2.jpg","images/test2.jpg","images/test2.jpg" };//5개의 이미지 경로
 const int realAngle[5] = { -20,-10,0,10,20 };//5개의 이미지에 대한 각도
 double Z;//초점거리
 Mat input_mat[5];//5개의 이미지를 저장할 mat
@@ -56,9 +56,9 @@ int main(void)
         input_angle = execute(input_points, inputCenter, input_height);
 
         //결과 출력
-        cout << "distance: " << round((input_height / 10) * 100) / 100 << " cm" << endl;
+        cout << "distance: " << round((input_height) * 100) / 100 << " cm" << endl;
         cout << "angle: " << round((input_angle * 180 / PI) * 100) / 100 << "º" << endl;
-        string sDistance = to_string(round((input_height / 10) * 100) / 100);
+        string sDistance = to_string(round((input_height) * 100) / 100);
         string sAngle = to_string(round((input_angle * 180 / PI) * 100) / 100);
         putText(input_mat[k], "distance: " + sDistance.substr(0, sDistance.find('.') + 3) + "cm", Point(20, 30), FONT_HERSHEY_DUPLEX, 1, Scalar(0, 0, 255));
         putText(input_mat[k], "angle: " + sAngle.substr(0, sAngle.find('.') + 3) + "degree", Point(20, 60), FONT_HERSHEY_DUPLEX, 1, Scalar(0, 0, 255));
